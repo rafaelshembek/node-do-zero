@@ -1,6 +1,3 @@
-// import { createServer } from "node:http";
-import Calc from "./teste.js";
-
 import { fastify } from "fastify";
 import { DatabasePostgres } from "./database-postgres.js";
 
@@ -55,10 +52,6 @@ server.delete('/video/:id', (request, reply) => {
     return reply.status(204).send()
     
 })
-server.get('/names', () => {
-    return Calc(5,5)
-})
-
 server.listen({
     host: '0.0.0.0',
     port: process.env.PORT ?? 3333,
