@@ -1,0 +1,29 @@
+POST http://localhost:3333/video
+Content-Type: application/json
+
+{
+    "title": "Dr Shape",
+    "description": "Loja de Suplemento de Anapolis",
+    "duration": 110
+}
+
+###
+
+GET http://localhost:3333/video?search=dr
+
+###
+GET http://localhost:3333/video
+###
+
+PUT http://localhost:3333/video/73b22320-e621-4379-b7a9-c709cc780ece
+Content-Type: application/json
+
+{
+    "title": "MAX Titaniu",
+    "description": "Premium super mass gainer",
+    "duration": 180
+}
+
+###
+
+DELETE http://localhost:3333/videos/bbe726e0-2d29-4eef-bb63-5f42574ffb15
